@@ -1,0 +1,66 @@
+.circleBox {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border-width: 5px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.numContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.numTextContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 7.5%;
+  margin-top: 15px;
+}
+.numsText {
+  max-width: 20%;
+  text-align: center;
+}
+.dottedLine {
+  width: 30%;
+  border-width: 1px;
+  border-style: dashed;
+  margin: 0px 2.5px;
+}
+.projectScroll {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
+}
+.projectScroll::-webkit-scrollbar {
+  display: none;
+}
+.descriptionParagraph {
+  margin-top: 10px;
+}
+.button {
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+}
+.sectionContainer {
+  margin-top: 40px;
+}
+.startPrjBtn {
+  margin-top: 20px;
+}
+.auditorImage {
+  border-radius: 75px;
+}
+.threeStepsContainer {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 2.5rem;
+}
+
+.logo {
+}
+
+.link {
+  text-decoration: none;
+}

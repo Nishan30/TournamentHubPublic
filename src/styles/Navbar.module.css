@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.walletButton {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}

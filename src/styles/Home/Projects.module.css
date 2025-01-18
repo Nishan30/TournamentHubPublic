@@ -1,0 +1,80 @@
+.projectContainer {
+  position: absolute;
+  border-radius: 15px;
+  height: 200px; /* Fixed height for the container */
+  width: 350px; /* Fixed width for all containers (adjust this value to your preference) */
+  overflow: auto; /* Prevent content from spilling out */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual depth */
+  transition: transform 0.3s ease; /* Optional: Smooth transition for hover */
+}
+
+.projectContainer:hover {
+  transform: translateY(-5px); /* Hover effect to lift the container */
+}
+
+.cardOnTop {
+  border-radius: 15px;
+  top: 80%; /* Start at the middle of the container */
+  width: 100%;
+  height: 100%; /* Initially take up most of the container */
+  z-index: 3;
+  position: absolute;
+  transition: top 0.3s ease, height 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cardOnTop:hover {
+  top: 50%; /* On hover, move to the top */
+  height: 100%; /* Expand to full height */
+}
+
+.cardInner {
+  padding: 10px 12px; /* Ensure enough space without overflow */
+  font-size: 0.85rem; /* Adjust text size for better fit */
+  line-height: 1.2; /* Improve readability with smaller text */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%; /* Ensure full container height is used */
+}
+
+.imageBottom {
+  z-index: 1;
+  width: 100%;
+  height: 50%; /* Ensure the image takes up half the space */
+  object-fit: cover; /* Ensure the image does not distort */
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 0.8rem;
+}
+
+/* Fixing the button visibility */
+.saveButton {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s ease-in-out; /* Smooth transition for visibility and opacity */
+}
+
+.cardOnTop:hover .saveButton {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, visibility 0s 0s;
+}
+
+/* Optional: Adjustments for responsiveness */
+@media (max-width: 600px) {
+  .projectContainer {
+    width: 250px; /* Reduce size for smaller screens */
+    height: 150px;
+  }
+
+  .cardOnTop {
+    top: 55%; /* Slightly adjust hover effect for smaller cards */
+    height: 75%;
+  }
+}
